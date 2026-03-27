@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="board-wrapper">
+        <section class="column task-column">
+          <h2>Task</h2>
+          <ul class="task-list">
+            <li class="card" draggable="true">Update Profile</li>
+            <li class="card" draggable="true">debug code</li>
+          </ul>
+        </section>
+
+        <section class="column in-progress-column">
+          <h2>In Progress</h2>
+          <ul class="task-list">
+            <li class="card" draggable="true">Review Code</li>
+          </ul>
+        </section>
+
+        <section class="column done-column">
+          <h2>Done</h2>
+          <ul class="task-list">
+            <li class="card" draggable="true">Fix Bug</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

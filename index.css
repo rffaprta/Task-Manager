@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 113, 115, 1) 0%,
+    rgba(255, 222, 150, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Styles */
+.board-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin: 8rem auto;
+}
+
+.column {
+  width: 300px;
+  min-height: 200px;
+  background-color: #c7a945;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background-color: #f3e5ab;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:active {
+  cursor: grabbing;
+}
