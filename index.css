@@ -23,9 +23,12 @@ body {
   display: flex;
   gap: 2rem;
   margin: 8rem auto;
+  align-items: flex-start;
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   min-height: 200px;
   background-color: #c7a945;
@@ -52,6 +55,7 @@ ul {
   padding: 0;
   margin: 0;
   min-height: 150px;
+  flex-grow: 1;
 }
 
 .card {
